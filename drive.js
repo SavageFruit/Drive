@@ -4,15 +4,15 @@ export class Drive {
   }
   static install(options) {
     if(options.type === 'pkg') {
-      var package = document.createElement("script");
+      var pkg = document.createElement("script");
       if(options.extension === true) {
-        package.src = options.packages.source + options.packages.extension;
+        pkg.src = options.packages.source + options.packages.extension;
       } else if(options.extension === false) {
-        package.src = options.packages.source;
+        pkg.src = options.packages.source;
       } else {
         console.error('No valid Package Extension received');
       }
-      document.body.appendChild(package);
+      document.body.appendChild(pkg);
     } else if(options.type === 'script') {
       var script = document.createElement("script");
       if(options.extension === true) {
