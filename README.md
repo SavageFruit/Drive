@@ -7,11 +7,14 @@
 ### Linking it using HTML
 > _code below_
 ```html
-<script type="text/javascript" src="https://savagefruit.github.io/Drive/drive.js"></scrip>
+<script type="text/javascript" src="https://unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+<script type="text/javascript" src="https://savagefruit.github.io/Drive/config.js"></script>
 ```
 
 ### Starting up
-**index.js**
+> Create a file called **main.js**
 ```js
 import { Drive } from 'https://savagefruit.github.io/Drive/drive.js';
+
+Drive.Start();
 ```
