@@ -12,6 +12,7 @@ export class Drive {
       } else {
         console.error('No valid Package Extension received');
       }
+      document.body.appendChild(package);
     } else if(options.type === 'script') {
       var script = document.createElement("script");
       if(options.extension === true) {
@@ -21,6 +22,7 @@ export class Drive {
       } else {
         console.log('No valid Package Extension received');
       }
+      document.body.appendChild(script);
     }
   }
 }
