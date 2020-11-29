@@ -1,6 +1,6 @@
 export class Drive {
   static Start() {
-    console.clear();
+    clear();
     console.log('Drive loaded');
   }
 }
