@@ -38,4 +38,6 @@ export class Drive {
       document.head.appendChild(bootstrapPkg);
     } else {
       console.error('No valid Package received to install');
+    }
+  }
 }
