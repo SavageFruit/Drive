@@ -25,4 +25,8 @@ export class Drive {
       document.body.appendChild(script);
     }
   }
+
+  static parse(parser) {
+    JSON.parse(parser);
+  }
 }
