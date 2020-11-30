@@ -20,3 +20,6 @@ import { Drive } from 'https://savagefruit.github.io/Drive/drive.js';
 console.clear(); /* Removes JavaScript error */
 Drive.Start();
 ```
+
+## Wanna do more?
+Check out our wiki pages to learn more about this brilliant language!
