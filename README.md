@@ -17,5 +17,6 @@
 ```js
 import { Drive } from 'https://savagefruit.github.io/Drive/drive.js';
 
+console.clear(); /* Removes JavaScript error */
 Drive.Start();
 ```
