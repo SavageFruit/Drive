@@ -25,8 +25,17 @@ export class Drive {
       document.body.appendChild(script);
     }
   }
-
-  static parse(parser) {
-    JSON.parse(parser);
-  }
+  static download(options) {
+    if(options.download === '--drive-fonts') {
+      var fontPkg = document.createElement('link');
+      fontPkg.rel = "stylesheet";
+      fontPkg.href = "https://savagefruit.github.io/CSS-Drive/fonts.css";
+      document.head.appendChild(fontPkg);
+    } else if(options.download === '--css-bootstrap') {
+      var bootstrapPkg = document.createElement('link')
+      bootstrapPkg.rel = "stylesheet";
+      bootstrapPkg.href = "https://savagefruit.github.io/CSS-Drive/bootstrap.min.css";
+      document.head.appendChild(bootstrapPkg);
+    } else {
+      console.error('No valid Package received to install');
 }
