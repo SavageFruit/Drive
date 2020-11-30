@@ -36,8 +36,13 @@ export class Drive {
       bootstrapPkg.rel = "stylesheet";
       bootstrapPkg.href = "https://savagefruit.github.io/CSS-Drive/bootstrap.min.css";
       document.head.appendChild(bootstrapPkg);
-    } /* else {
-      console.error('No valid Package received to install');
-    } */
+    } else if(options.download === '--js-angular') {
+      var angularPkg = document.createElement("script");
+      var angularPkg_ = document.createElement("script");
+      angularPkg.src = "https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js";
+      angularPkg_.src = "https://cdn.jsdelivr.net/npm/angular@1.7.3/angular.min.js";
+      document.body.appendChild(angularPkg);
+      document.body.appendChild(angularPkg_);
+    }
   }
 }
