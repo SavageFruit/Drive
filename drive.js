@@ -36,8 +36,8 @@ export class Drive {
       bootstrapPkg.rel = "stylesheet";
       bootstrapPkg.href = "https://savagefruit.github.io/CSS-Drive/bootstrap.min.css";
       document.head.appendChild(bootstrapPkg);
-    } else {
+    } /* else {
       console.error('No valid Package received to install');
-    }
+    } */
   }
 }
