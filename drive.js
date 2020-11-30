@@ -43,6 +43,10 @@ export class Drive {
       angularPkg_.src = "https://cdn.jsdelivr.net/npm/angular@1.7.3/angular.min.js";
       document.body.appendChild(angularPkg);
       document.body.appendChild(angularPkg_);
+    } else if(options.download === '--js-vue') {
+      var vuePkg = document.createElement("script");
+      vuePkg.src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js";
+      document.body.appendChild(vuePkg);
     }
   }
 }
