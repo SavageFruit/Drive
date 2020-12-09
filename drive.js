@@ -56,6 +56,6 @@ export class Drive {
       var flag = options.meta.flag;
       console.log('Drive "fragment" created @ main.js && args="all" + ?flag = ' + flag)   
     }
-    var options.meta.name = options.meta.value;
+    var frag = options.meta.value;
   }
 }
