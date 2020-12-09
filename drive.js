@@ -54,7 +54,7 @@ export class Drive {
     var name = options.meta.name;
     if(options.drive.log === 'true') {
       var flag = options.meta.flag;
-      console.log('Drive "fragment" created @ main.js && args="all" + ?flag = ' + flag)   
+      console.log('Drive "fragment" created @ main.js && args="all" + ?flag = ' + flag + ' @// Drive fragment.name: ' + name)   
     }
     var frag = options.meta.value;
   }
