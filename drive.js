@@ -49,4 +49,13 @@ export class Drive {
       document.body.appendChild(vuePkg);
     }
   }
+  
+  static createElement(options) {
+    var name = options.meta.name;
+    if(options.drive.log === 'true') {
+      var flag = options.meta.flag;
+      console.log('Drive "element" created @ main.js && args="all" + ?flag = ' + flag)   
+    }
+    var options.meta.name = options.meta.value;
+  }
 }
